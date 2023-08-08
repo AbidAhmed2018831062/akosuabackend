@@ -6,7 +6,7 @@ const RoomModel=require("./models/roommodel")
 const resModel=require("./models/resModel");
 
 const storageEngine = multer.diskStorage({
-    destination: (req, file, cb) => { cb(null, `D:/upload`) },
+    destination: (req, file, cb) => { cb(null, `./upload`) },
     filename: (req, file, cb) => { cb(null, file.originalname) }, });
 
     const audiobookFilter = (req, file, cb) => {
